@@ -38,9 +38,9 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId "com.example.vk_encode"
-        minSdkVersion 16
-        targetSdkVersion 28
+        applicationId "com.codegurupu.VK"
+        minSdkVersion 23
+        targetSdkVersion 26
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
     }
