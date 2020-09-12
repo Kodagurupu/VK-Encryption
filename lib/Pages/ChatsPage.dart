@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'MessagesPage.dart';
+import 'OptionsPage.dart';
 
 class ChatTemplate
 {
@@ -25,7 +26,7 @@ class _ChatsState extends State<Chats> {
     new ChatTemplate(
         Image.asset("lock.gif"),
         "Vadim",
-        "How are you?"
+        "Well it's nice"
     ),
     ChatTemplate(
         Image.asset("lock.gif"),
@@ -64,7 +65,14 @@ class _ChatsState extends State<Chats> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Your chats"),
-        leading: Icon(Icons.menu),
+        leading: GestureDetector(
+          onTap: () {
+            Navigator.push(context, MaterialPageRoute(
+              builder: (BuildContext context) => OptionsPage()
+            ));
+          },
+          child: Icon(Icons.menu)
+        ),
       ),
       body: Container(
         child: ListView.builder(
