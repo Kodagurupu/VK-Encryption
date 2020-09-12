@@ -25,3 +25,40 @@ GUI. There will be four pages in our app:
  * *	Set password for app.
  * *	Choose encryption algorithm.
  * *	Exit from account
+ 
+ # Realization
+## GUI
+Our app based on Flutter. Is simple framework which allows to create beautiful app in a short time. As I told before there are four pages in our app, and there are few main pages. I will start from login page.
+
+### Login page
+<img src="examples/login_page.png" width="250"/> 
+
+As you can see there are plain login page with user authentication elements like: login, password and submit button.  
+We don’t store users data. You can see it in code at your github.
+
+After authentication user will be redirected to next page.
+
+### Chats page  
+<img src="examples/chats_page.png" width="250"/>
+
+There are page which contains users who wrote to current VK account. It's list with account image, name and last message.  
+Also there are a menu button which provides functions for delete encrypted messages, hide or mute user.
+<div></div>
+
+
+
+### Messages page
+<img src="examples/message_page.png" width="250"/>
+
+There are messages page. Our app will automatically decrypt messages and show it to user. In basic version you can just send and read messages.
+
+Also there are app bar with user name and last seen time.
+
+
+
+
+
+### Options page
+<img src="examples/options_page.png" width="250"/>
+
+There page where you can choose encryption methods, select app language, theme and exit from account.
